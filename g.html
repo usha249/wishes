@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday ghani!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="balloons">
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon green"></div>
+    <div class="balloon yellow"></div>
+  </div>
+
+  <div class="container">
+    <br>
+    <br>
+    <h1>Happy birthday ghani!</h1>
+    <p id="message">Click below for a surprise gift just for you!</p>
+    <button onclick="showSurprise()">Open Surprise</button>
+
+    <div id="surprise" class="hidden">
+      <img src="ghanamma.png" alt="Celebration" style="max-width:100%; height:auto;" />
+      <p class="love-note">Ghani you bring so much joy and light. May your birthday be filled with love, laughter, and beautiful memories!</p>
+      
+      <!-- Video link text, now linking properly to the YouTube video -->
+      <a href="ghanivideo.mp4" target="_blank" class="song-text">
+        This song is for you (click here)
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById('surprise').classList.remove('hidden');
+    }
+  </script>
+
+  <style>
+    .hidden { display: none; }
+    .balloons {
+      display: flex;
+      gap: 10px;
+      margin: 20px;
+      justify-content: center;
+    }
+    .balloon {
+      width: 50px;
+      height: 70px;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: relative;
+    }
+    .red { background: red; }
+    .blue { background: blue; }
+    .green { background: green; }
+    .yellow { background: yellow; }
+    .container {
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .song-text {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</body>
+</html>

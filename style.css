@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #ff5c8d;
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  button {
+    background-color: #ff5c8d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff4780;
+  }
+  
+  /* Balloons Animation */
+  .balloons {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .balloon {
+    width: 60px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  .red {
+    background-color: red;
+    left: 10px;
+    animation-delay: 0s;
+  }
+  
+  .blue {
+    background-color: blue;
+    left: 80px;
+    animation-delay: 1s;
+  }
+  
+  .green {
+    background-color: green;
+    left: 150px;
+    animation-delay: 2s;
+  }
+  
+  .yellow {
+    background-color: yellow;
+    left: 220px;
+    animation-delay: 3s;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Surprise Section */
+  #surprise {
+    margin-top: 40px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .love-note {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .song-text {
+    font-size: 18px;
+    color: #ff5c8d;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: underline;
+  }
